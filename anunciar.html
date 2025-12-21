@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Anunciar Imóvel - Arrendamento Angola</title>
+    <link rel="stylesheet" href="anunciar.css">
+</head>
+<body>
+    <main>
+        <a href="arrendamento.html">
+            <button style="padding: 8px; border-radius: 8px; background-color: #1ec061;font-size: 15px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Voltar</button>
+        </a>
+        <h2 style="color: white;">🏠 Anuncie seu Imóvel</h2>
+        <p style="color: white;">Alcance milhares de pessoas procurando casa em Angola</p>
+        
+        <!-- Planos -->
+        <h2 style="color: white;">Escolha seu Plano</h2>
+        <div class="planos">
+            <div class="plano">
+                <h3>Individual</h3>
+                <p class="preco">800 Kz/mês</p>
+                <ul style="text-align: left;">
+                    <li>✅ 1 imóvel ativo</li>
+                    <li>✅ Até 10 fotos</li>
+                    <li>✅ Contato via WhatsApp</li>
+                    <li>❌ Sem destaque</li>
+                    <li>❌ Relatórios básicos</li>
+                </ul>
+                <a href="https://wa.me/244957318064?text= Escolher Plano">
+                    <button class="btn-plano" onclick="escolherPlano('individual')">
+                        Plano Básico
+                    </button>
+                </a>
+            </div>
+            
+            <div class="plano destaque">
+                <h3>Imobiliária</h3>
+                <p class="preco">3.000 Kz/mês</p>
+                <ul style="text-align: left;">
+                    <li>✅ 10 imóveis ativos</li>
+                    <li>✅ Até 20 fotos por imóvel</li>
+                    <li>✅ Destaque na busca</li>
+                    <li>✅ Relatório de leads</li>
+                    <li>✅ Suporte prioritário</li>
+                </ul>
+                <a href="https://wa.me/957318064?text=Plano Mais Popular">
+                    <button class="btn-plano" onclick="escolherPlano('imobiliaria')">
+                        Plano Mais Popular
+                    </button>
+                </a>
+            </div>
+            
+            <div class="plano">
+                <h3>Premium</h3>
+                <p class="preco">7.000 Kz/mês</p>
+                <ul style="text-align: left;">
+                    <li>✅ Imóveis ilimitados</li>
+                    <li>✅ Topo da página inicial</li>
+                    <li>✅ Banner personalizado</li>
+                    <li>✅ Relatório avançado</li>
+                    <li>✅ Consultoria personalizada</li>
+                </ul>
+                 <a href="https://wa.me/957318064?text=Plano Mais Popular">
+                    <button class="btn-plano" onclick="escolherPlano('premium')">
+                        Plano Mais Popular
+                    </button>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Formulário de Cadastro (aparece depois de escolher plano) -->
+        <div id="formCadastro" style="display: none; margin-top: 50px;">
+            <h2>Cadastre-se como Vendedor</h2>
+            <form id="formVendedor" action="https://script.google.com/macros/s/SEUCODIGO/exec" method="POST">
+                <input type="hidden" name="plano" id="planoEscolhido">
+                
+                <div style="margin-bottom: 15px;">
+                    <label>Nome Completo *</label>
+                    <input type="text" name="nome" required style="width: 100%; padding: 10px;">
+                </div>
+                
+                <div style="margin-bottom: 15px;">
+                    <label>WhatsApp *</label>
+                    <input type="tel" name="whatsapp" required placeholder="244 9XX XXX XXX">
+                </div>
+                
+                <div style="margin-bottom: 15px;">
+                    <label>Email</label>
+                    <input type="email" name="email">
+                </div>
+                
+                <div style="margin-bottom: 15px;">
+                    <label>É imobiliária?</label>
+                    <select name="tipo">
+                        <option value="individual">Proprietário Individual</option>
+                        <option value="imobiliaria">Imobiliária/Corretor</option>
+                    </select>
+                </div>
+                
+                <button type="submit" style="background: #27ae60; color: white; padding: 15px 30px; border: none; border-radius: 5px; cursor: pointer;">
+                    📝 Cadastrar e Receber Instruções de Pagamento
+                </button>
+            </form>
+            
+            <p style="margin-top: 20px; color: #666;">
+                Após cadastro, enviaremos as instruções de pagamento via WhatsApp.
+                Após confirmação do pagamento, sua conta será ativada em até 24h.
+            </p>
+        </div>
+    </main>
+</body>
+<footer style="background-color: rgba(0, 0, 0, 0.42); color: white; padding: 15px;">Arrendamento de Casas Angola 2026 @ António Lando Paulino</footer>
+</html>
