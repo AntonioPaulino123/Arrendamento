@@ -298,25 +298,26 @@
             border-top: 1px solid #eee;
             margin-top: 50px;
         }
-        
-        /* RESPONSIVO */
-        @media (max-width: 600px) {
-            .nav-links {
-                margin-top: 15px;
-                width: 100%;
-            }
-            
-            .nav-links a {
+@media (max-width: 600px) {
+        .nav-links {
+        margin-top: 15px;
+        width: 100%;
+        }
+        .nav-links a {
                 margin: 5px;
                 display: inline-block;
             }
-            
-            .filtros-grid {
+        .filtros-grid {
                 grid-template-columns: 1fr;
-            }
-            
-            .casas-grid {
-                grid-template-columns: 1fr;
-            }
         }
+        .casas-grid {
+                grid-template-columns: 1fr;
+            }
+        .filtro-group{
+                font-size:14px;
+                padding:8px;
+        }
+                
+}
+
 
