@@ -312,12 +312,12 @@
         }
         .casas-grid {
                 grid-template-columns: 1fr;
-            }
-        .filtro-group{
-                font-size:14px;
-                padding:8px;
         }
+        header{
+                width:100%;
+
                 
 }
+
 
 
