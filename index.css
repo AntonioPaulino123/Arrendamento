@@ -9,10 +9,9 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #333;
-            max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #f8f9fa;
+            background-color: #f8f9fa; width:100%
         }
         
         /* HEADER */
@@ -22,7 +21,7 @@
             padding: 20px;
             border-radius: 10px;
             margin-bottom: 30px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1); width:100%;
         }
         
         .logo {
@@ -30,28 +29,34 @@
             font-weight: bold;
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 10px; flex-wrap:wrap;
         }
         
         .logo span {
             font-size: 34px;
         }
-        
+        .nav-links{
+                display:flex;
+                flex-wrap:wrap;
+                gap:10px;
+                width:100%;
+                justify-content:center;
+        }
         nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-top: 15px;
-            flex-wrap: wrap;
+            flex-wrap: wrap; width:100%; flex-wrap:wrap;
         }
         
         .nav-links a {
             color: white;
             text-decoration: none;
             margin-left: 25px;
-            padding: 8px 15px;
+            padding: 10px 15px;
             border-radius: 5px;
-            transition: background 0.3s;
+            transition: background 0.3s; flex:1 1 auto; min-width:120px; text-align:center; font_size:15px; 
         }
         
         .nav-links a:hover {
@@ -64,7 +69,7 @@
             padding: 25px;
             border-radius: 10px;
             margin-bottom: 30px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05); width:100%;
         }
         
         .filtros h2 {
@@ -119,7 +124,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 8px;
+            gap: 8px; flex:1; min-width:150px;
         }
         
         .btn-filtro:hover {
@@ -298,14 +303,17 @@
             border-top: 1px solid #eee;
             margin-top: 50px;
         }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
         .nav-links {
-        margin-top: 15px;
-        width: 100%;
+        justify-content:space-between; gap:5px
         }
+        body{padding:10px;}
+        
+        header{padding:15px;}
+        
         .nav-links a {
                 margin: 5px;
-                display: inline-block;
+                display: inline-block; padding:8px 10px; font-size:13px; min-width:90px; flex: 1 1 calc(33.33% - 8px);
             }
         .filtros-grid {
                 grid-template-columns: 1fr;
@@ -313,12 +321,22 @@
         .casas-grid {
                 grid-template-columns: 1fr;
         }
-        header{
-                width:100%;
+        .casa-detalhes{
+                flex-direction:column;
+                gap:10px;
         }
-
-                
+        .logo h1{
+                font-size:24px;
+        }
+        .logo p{font-size:14px;}
+        .filtros{padding:20px;}
+        .btn-limpar{margin-left:0;}
+        .btn-filtro{width:100%; margin-bottom:10px;}
+        
 }
+
+
+
 
 
 
