@@ -1,23 +1,22 @@
 
         .planos {
-            display: flex;
-            gap: 20px;
+            gap: 25px;
             justify-content: center;
             margin: 40px 0;
-            background-color: beige;
+            background-color: beige; padding:20px; border-radius:10px; flex-wrap:wrap;
         }
         .plano {
             border: 2px solid #ddd;
             border-radius: 10px;
-            padding: 30px;
+            padding: 20px;
             text-align: center;
             width: 300px;
-            background-color: white;
+            background-color: white; max-width:400px; min-height:auto;display:flex; flex-direction:column; justify-content:space-between;
         }
         .plano.destaque {
             border-color: #3498db;
             transform: scale(1.05);
-            background-color: white;
+            background-color: white; order: -1; 
         }
         .btn-plano {
             background: #2c3e50;
@@ -41,28 +40,25 @@ li{
 ul{
     background-color: white;
 }
-h1{
-    color: white;
-
-} /* RESPONSIVO */
+h1{color: white;font-size:28px;}
+h2{font-size:22px; text-align:center; color:white;}
+ /* RESPONSIVO */
 @media (max-width: 600px) {
 .planos {
-        width:100%;
-        justify-content:space-between;
-        gap:5px;
-        align-items:column;
+        margin:20px 0;
+        padding:15px;
         }
 .plano.destaque {
          width:100%;
         font-size:14px;
         }
-
-.plano {
-        width:100%;
+.plano{
+        padding:15px, 10px;
+}
+.btm-plano{
+        padding:10px 20px;
         font-size:14px;
 }
-h2{
-        font-size:15px;
-} 
         }
+
 
