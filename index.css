@@ -298,7 +298,7 @@
             border-top: 1px solid #eee;
             margin-top: 50px;
         }
-@media (max-width: 600px) {
+@media (max-width: 500px) {
         .nav-links {
         margin-top: 15px;
         width: 100%;
@@ -318,6 +318,7 @@
 
                 
 }
+
 
 
 
